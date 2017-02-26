@@ -1,4 +1,4 @@
-# Version : 0.0.1
+# Version : 0.1.1
 FROM php:7.1.1-fpm
 MAINTAINER Hand Dai "daigangbo@gmail.com"
 RUN apt-get update && apt-get install -y \
