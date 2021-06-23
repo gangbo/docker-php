@@ -6,7 +6,9 @@
 - swoole 4.6.7 
 - redis
 
-## 启动
+## 启动(默认php7.4)
 ``
 docker-compose up -d
 ``
+## php8
+```docker-compose -f docker-compose8.yaml up -d```
