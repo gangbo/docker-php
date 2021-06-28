@@ -19,10 +19,14 @@ docker-compose -f docker-compose74fpm.yaml up -d
 php8-cli启动后会执行`tail -f /dev/null`,这个命令在entrypoint.sh里，你可以替换成
 swoole服务```php swoole_server.php```,在开发的时候也可以手动启动swoole服务
 ```
-$: docker-compose -f docker-compose8cli-swoole.yaml exec app bash
-$: php blog/swoole_server.php
+docker-compose -f docker-compose8cli-swoole.yaml exec app bash
+php blog/swoole_server.php
 
 ```
 
 ##访问
 ``http://localhost:8099``
+
+##快速启动
+如果你一直是在php7.4版本做开发的话，可以把`docker-compose74fpm.yaml`改成`docker-compose.yaml`,
+这样启动的时候可以直接`docker-compose up -d`
