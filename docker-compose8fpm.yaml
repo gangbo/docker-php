@@ -7,7 +7,7 @@ services:
         user: phpuser
         uid: 1000
       context: ./
-      dockerfile: ./docker-compose/Dockerfile_php8
+      dockerfile: docker-compose/Dockerfile_php8fpm
     image: php8fpm
     restart: unless-stopped
     working_dir: /var/www/
