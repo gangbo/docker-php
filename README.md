@@ -2,7 +2,14 @@
 ## php开发环境快速搭建
 ## 环境说明
 由于pecl安装时网络问题，所以把常用的几个扩展下载到了本地`docker-compose/pecl`
-- php7.4
+- pdo_mysql
+- zip
+- exif
+- pcntl 
+- bcmath
+- gd
+- opcache
+- mcrypt
 - swoole 4.6.7 
 - redis
 
