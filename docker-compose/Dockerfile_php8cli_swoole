@@ -34,7 +34,7 @@ RUN cd /var/www/html/pecl \
     && echo "\n\n\n" | pecl install ./redis-5.3.4.tgz \
     && echo 'extension=redis.so' >  /usr/local/etc/php/conf.d/php-ext-redis.ini \
     && echo "\n\n\n\n\n" | pecl install ./swoole-4.6.7.tgz \
-    && echo 'extension=swoole.so' >  /usr/local/etc/php/conf.d/php-ext-swoole.ini \
+    && echo "extension=swoole.so\nswoole.use_shortname=Off" >  /usr/local/etc/php/conf.d/php-ext-swoole.ini \
     && cd .. && rm -rf pecl
 
 
